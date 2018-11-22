@@ -1,0 +1,50 @@
+{
+    "name": "netiul/doctrine-money-module",
+    "description": "Zend Framework integration of doctrine and moneyphp/money",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zacharias Luiten",
+            "email": "github@zachariasluiten.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "doctrine/doctrine-module": "^0.8 || ^1.0",
+        "zendframework/zend-form": "^2.3",
+        "zendframework/zend-filter": "^2.3",
+        "zendframework/zend-validator": "^2.3",
+        "zendframework/zend-view": "^2.3",
+        "zendframework/zend-servicemanager": "^2.3 | ^3.1",
+        "zendframework/zend-modulemanager": "^2.3",
+        "zendframework/zend-i18n": "^2.3",
+        "moneyphp/money": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.4",
+        "friendsofphp/php-cs-fixer": "^1.11",
+        "doctrine/dbal": "^2.5",
+        "doctrine/mongodb-odm": "^1.0",
+        "alcaeus/mongo-php-adapter": "^1.1"
+    },
+    "suggest": {
+        "doctrine/dbal": "^2.5",
+        "doctrine/mongodb-odm": "^1.0",
+        "doctrine/orm": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netiul\\DoctrineMoneyModule\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netiul\\DoctrineMoneyModule\\" : "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
